@@ -15,7 +15,7 @@
   }
 }
 /* Media Query Tablet */
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   header, main, footer {
     text-align: left;
   }
@@ -27,6 +27,40 @@
   }
   p {
     font-size: 1.2em;
+  }
+  /* Ajustes específicos para tablet */
+  .navbar-brand img {
+    height: 70px !important;
+  }
+  /* Ajuste para secciones con imágenes de fondo */
+  #intro {
+    height: 600px !important;
+  }
+  #get-software {
+    height: 500px !important;
+  }
+  .card {
+    margin: 1rem auto;
+    max-width: 90%;
+  }
+  .card img {
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .form-container, .company-info {
+    margin: 2rem auto;
+    padding: 1.5rem;
+  }
+  /* Ajuste para el contenido principal */
+  main {
+    padding-top: 100px; /* Altura de la navbar en tablet */
+  }
+  section {
+    padding: 2rem 0;
+  }
+  .container {
+    padding: 0 1.5rem;
   }
 }
 /* Media Query Móvil */
@@ -45,16 +79,72 @@
     font-size: 1em;
     line-height: 1.4;
   }
+  /* Ajustes específicos para móvil */
+  .navbar-brand img {
+    height: 50px !important;
+  }
+  /* Ajuste para secciones con imágenes de fondo */
+  #intro {
+    height: 400px !important;
+  }
+  #intro .container {
+    margin-top: 100px !important;
+  }
+  #get-software {
+    height: 300px !important;
+  }
+  #get-software .container {
+    margin-top: 50px !important;
+  }
   .custom-button {
     width: 150px;
     padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
+    margin: 1rem auto;
   }
   .navbar a {
     font-size: 0.9rem;
     text-decoration: none;
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
     color: #000000;
+  }
+  /* Ajuste para el contenido principal */
+  main {
+    padding-top: 80px; /* Altura de la navbar en móvil */
+  }
+  .card {
+    margin: 1rem auto;
+    max-width: 95%;
+  }
+  .card img {
+    max-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .form-container, .company-info {
+    margin: 1.5rem auto;
+    padding: 1rem;
+    width: 95%;
+  }
+  section {
+    padding: 2rem 0;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .row {
+    margin: 0;
+  }
+  .col-md-6, .col-md-12 {
+    padding: 0.5rem;
+  }
+  /* Ajuste para el footer en móvil */
+  .footer {
+    padding: 2rem 0;
+  }
+  .footer img {
+    height: 150px !important;
+    margin: 1rem auto;
   }
 }
 /* Header */
